@@ -1,0 +1,762 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: #202124;
+    color: white;
+}
+/*DIV z kontentem*/
+.core {
+    margin: auto;
+    max-width: 1030px;
+}
+
+.loginTop{
+    width: 100%;
+    padding-bottom: 8px;
+    font-size: 22px;
+    text-transform: uppercase;
+    float: right;
+}
+
+.top_content{
+    top: 32px;
+    bottom: 32px;
+    margin: auto;
+    text-align: right;
+    padding-bottom: 32px;
+    padding-top: 16px;
+}
+
+.button_group{
+    float: right;
+    margin-top: auto;
+}
+
+.content{
+    top: 32px;
+    margin: auto;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: 800px;
+}
+
+.bottomSite{
+    text-align: center;
+}
+
+.imgb{
+    max-width: 224px;
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+/*Tabela*/
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 16px;
+    font-size: 4vw;
+    box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.9), 0 0px 50px 0 rgba(0, 0, 0, 0.6);
+}
+
+#customers td, #customers th {
+    /*border: 1px solid #121314;*/
+    padding: 8px;
+    font-size: 15px;
+    color: white;
+}
+
+#customers tr{
+    transition: all .1s linear;
+}
+
+#customers tr:nth-child(odd){
+    background-color: #202124;
+}
+
+#customers tr:nth-child(even){
+    background-color: #18191b;
+}
+
+#customers tr:hover {
+    background-color: #43454b;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    text-shadow: 2px 2px 8px #000000;
+    background-color: #37579b;
+    color: white;
+}
+
+#groupCell{
+    background-color: #17223a;
+    text-shadow: 2px 2px 8px #000000;
+    color: white;
+    font-weight: bold;
+}
+
+#data{
+    min-width: 70px;
+}
+
+#nazwa{
+    width: 598px;
+}
+
+#status{
+    min-width: 128px;
+}
+
+#odc{
+    min-width: 128px;
+}
+
+#opcje{
+    min-width: 64px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #202124;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 900px;
+    display: table;
+    clear: both;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* The Modal GRÓPY ANIME */
+.modalCategory {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+    
+/* Modal Content */
+.modalCategory-content {
+    background-color: #202124;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 900px;
+    display: table;
+    clear: both;
+}
+
+/* The Modal GRÓPY ANIME EDYCJA */
+.groupModal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+    
+/* Modal Content */
+.groupModalContent {
+    background-color: #202124;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 900px;
+    display: table;
+    clear: both;
+}
+
+/* The Modal EDYCJA ANIME */
+.modalEdit {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    }
+    
+    /* Modal Content */
+.modalEdit-content {
+    background-color: #202124;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    width: 900px;
+    display: table;
+    clear: both;
+}
+
+/* Input TITLE */
+input.title{
+    width: 100%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #00465e;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+}
+
+/* Input LINK */
+input.link{
+    width: 100%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #00465e;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+}
+
+input.epil{
+    width: 25%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #00465e;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+}
+
+/* Input DESCRYPTION */
+textarea.description{
+    width: 544px;
+    height: 128px;
+    resize: none;
+    border: 2px solid #00465e;
+    border-radius: 12px;
+    background-color: #202124;
+    color: white;
+}
+
+select.group{
+    padding: 6px 10px;
+    width: 100%;
+    border: 2px solid #00465e;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+    font-size: 16px;
+    transition: all .1s linear;
+}
+
+select.group:hover, select.group::after{
+    border: 2px solid #008CBA;
+    box-shadow: 0 0px 16px 0 rgba(0, 153, 255, 0.24), 0 0px 50px 0 rgba(0, 153, 255, 0.19);
+    text-decoration: underline;
+}
+
+.AddBody{
+    padding: 10px;
+    margin-top: 16px;
+}
+
+.AddImg{
+
+    float: left;
+    width: 256;
+    padding: 10px;
+    margin-top: 16px;
+}
+
+.AddInf{
+
+    float: left;
+    padding: 10px;
+}
+
+.btZapis{
+    float: right;
+    top: 32px;
+    margin: 4px 2px;
+    padding: 8px 32px;
+    font-size: 16px;
+    border: 2px solid #00465e;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+    transition: all .1s linear;
+}
+
+.btZapis:hover{
+    border: 2px solid #008CBA;
+    box-shadow: 0 0px 16px 0 rgba(0, 153, 255, 0.24), 0 0px 50px 0 rgba(0, 153, 255, 0.19);
+    text-decoration: underline;
+}
+
+
+.menubt{
+    border: 2px solid #00465e;
+    border-radius: 16px;
+    color: white;
+    padding: 8px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #202124;
+    font-weight: bold;
+    transition: all .1s linear;
+    width: 192px;
+}
+
+.menubt:hover{
+    border: 2px solid #008CBA;
+    box-shadow: 0 0px 16px 0 rgba(0, 153, 255, 0.24), 0 0px 50px 0 rgba(0, 153, 255, 0.19);
+    text-decoration: underline;
+}
+
+/*Select statusu oglądania*/
+.slStyleEp{
+    padding: 4px 4px;
+    width: 128px;
+    border: 2px solid #00465e;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+    font-weight: bold;
+    transition: all .1s linear;
+}
+
+.slStyleEp:hover, .slStyleEp::after{
+    border: 2px solid #008CBA;
+    box-shadow: 0 0px 16px 0 rgba(0, 153, 255, 0.24), 0 0px 50px 0 rgba(0, 153, 255, 0.19);
+    text-decoration: underline;
+}
+
+.descriptionCloud {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.descriptionCloud .descriptionText {
+    visibility: hidden;
+    width: 720px;
+    background: #202124;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    border-radius: 4px;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: 0 0px 16px 0 rgba(0, 0, 0, 0.9), 0 0px 50px 0 rgba(0, 0, 0, 0.6);
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: -64px;
+    left: 105%;
+/*margin-left: -60px;*/
+
+/* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.descriptionCloud:hover .descriptionText {
+    visibility: visible;
+    opacity: 1;
+}
+
+.spImg{
+    border: 2px solid #000;
+    border-radius: 4px;
+    box-shadow: 0 0px 8px 0 rgba(0, 0, 0, 0.9), 0 0px 50px 0 rgba(0, 0, 0, 0.6);
+}
+
+/* Divy z kontentem dla span */
+.spanDivMom{
+    padding: 8px;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.spanDivImg{
+    width: 200px;
+    float: left;
+    padding: 16px;
+}
+
+.spanDivContent{
+    width: 430px;
+    float: left;
+    padding: 16px;
+}
+
+.pEmpty{
+    text-align: center;
+    font-size: 40px;
+}
+
+.contentName{
+    font-size: 20px;
+    font-weight: normal;
+    color: black;
+}
+
+.contentData{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.edBtn{
+    padding: 6px 16px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: rgb(57, 168, 112);
+    border: 0px solid black;
+    border-radius: 4px;
+}
+
+.edBtn:hover{
+    background-color: rgb(14, 90, 52);
+}
+
+.edBtnGroup{
+    padding: 2px 4px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 100%;
+    border: 2px solid #00465e;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #17223a;
+    transition: all .1s linear;
+    float: right;
+}
+
+.editbtimg{
+    filter: hue-rotate(210deg);
+    vertical-align: middle;
+    padding: 2px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.edBtnGroup:hover{
+    background-color: #17223a;
+
+    border: 2px solid #008CBA;
+    box-shadow: 0 0px 16px 0 rgba(0, 153, 255, 0.24), 0 0px 50px 0 rgba(0, 153, 255, 0.19);
+    text-decoration: underline;
+}
+
+.edBtnGroup:hover .editbtimg{
+    -webkit-animation: rotating 2s linear infinite;
+    -moz-animation: rotating 2s linear infinite;
+    -ms-animation: rotating 2s linear infinite;
+    -o-animation: rotating 2s linear infinite;
+    animation: rotating 2s linear infinite;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotating {
+from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+}
+
+.chBox{
+    padding: 6px 16px;
+}
+
+a.HiperLink{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a.HiperLink::before {
+    content: '🔗';
+}
+
+/*Dodawanie kategorii*/
+input.category{
+    width: 100%;
+    padding: 6px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #00465e;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+}
+
+
+/*chceckbox kasowanie*/
+.checkContent{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    float: right;
+}
+
+.checkContent input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkMark{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #202124;
+    border-radius: 50%;
+    border: 2px solid #00465e;
+    transition: all .1s linear;
+}
+
+.checkContent:hover input ~ .checkMark{
+    border: 2px solid #008CBA;
+    box-shadow: 0 0px 16px 0 rgba(0, 153, 255, 0.24), 0 0px 50px 0 rgba(0, 153, 255, 0.19);
+}
+
+.checkContent input:checked ~ .checkMark{
+    background-color: #008CBA;
+    border: 2px solid #008CBA;
+}
+
+.checkMark::after{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.checkContent input:checked ~ .checkMark::after{
+    display: block;
+}
+
+.checkContent .checkMark:after{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btLogout{
+    top: 32px;
+    margin: 4px 2px;
+    padding: 8px 17px;
+    font-size: 16px;
+    border: 2px solid #5e0027;
+    border-radius: 50%;
+    background-color: #202124;
+    background:url(../images/logout.svg) no-repeat;
+    color: white;
+    transition: all .1s linear;
+}
+
+.btLogout:hover{
+    border: 2px solid #ba002e;
+    box-shadow: 0 0px 16px 0 rgba(255, 0, 43, 0.24), 0 0px 50px 0 rgba(255, 0, 242, 0.19);
+    text-decoration: underline;
+    background:url(../images/logout_light.svg) no-repeat;
+}
+
+.userImg{
+    max-width: 32px;
+    width: auto;
+    height: auto;
+}
+
+.userTxt {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.descryptionBtn{
+    padding: 2px 4px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 100%;
+    border: 2px solid #00632c;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #17223a;
+    transition: all .1s linear;
+    float: left;
+}
+
+.descryptionBtnImg{
+    vertical-align: middle;
+    padding: 2px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.descryptionBtn:hover{
+    background-color: #17223a;
+
+    border: 2px solid #00b853;
+    box-shadow: 0 0px 16px 0 rgba(0, 255, 85, 0.24), 0 0px 50px 0 rgba(0, 255, 136, 0.19);
+    text-decoration: underline;
+}
+
+input.search{
+    width: 256px;
+    padding: 6px 10px;
+    margin: 4px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: 2px solid #00465e;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+}
+
+div.tableTools{
+    margin-top: auto;
+    float: right;
+}
+
+div.filterTools{
+    margin-top: auto;
+    float: left;
+}
+
+.btnSearch{
+    top: 32px;
+    padding: 3px 5px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 100%;
+    border: 2px solid #00465e;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #17223a;
+    transition: all .1s linear;
+    float: right;
+}
+
+.searchBtImg{
+    filter: hue-rotate(210deg);
+    vertical-align: middle;
+    padding: 2px 0px;
+    width: 16px;
+    height: 16px;
+}
+
+.btnSearch:hover{
+    background-color: #17223a;
+
+    border: 2px solid #008CBA;
+    box-shadow: 0 0px 16px 0 rgba(0, 153, 255, 0.24), 0 0px 50px 0 rgba(0, 153, 255, 0.19);
+    text-decoration: underline;
+}
+
+tr.foundElement{
+    border: 2px solid red;
+}

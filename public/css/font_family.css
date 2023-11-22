@@ -1,0 +1,14 @@
+@font-face {
+    font-family: fnt-standard;
+    src: url(/fonts/Lato-Light.ttf);
+  }
+
+@font-face {
+    font-family: fnt-title;
+    src: url(/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: fnt-open-sans-regular;
+  src: url(/fonts/OpenSans-Regular.ttf);
+}

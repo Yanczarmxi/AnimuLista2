@@ -1,0 +1,80 @@
+<div class="modal fade" id="modalAddRecord" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Dodaj Anime</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-flex flex-row">
+          <div class="importImageBody d-flex flex-column">
+            <!--<img src="/images/no_img.jpg" width="200" height="285" class="p-2"/>-->
+            <div class="border border-secondary file-size">
+              <div class="file-upload-wrapper">
+                <div class="d-flex flex-column text-center">
+                  <div><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-cloud-upload-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 4.095 0 5.555 0 7.318 0 9.366 1.708 11 3.781 11H7.5V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11h4.188C14.502 11 16 9.57 16 7.773c0-1.636-1.242-2.969-2.834-3.194C12.923 1.999 10.69 0 8 0zm-.5 14.5V11h1v3.5a.5.5 0 0 1-1 0z"/>
+                  </svg></div>
+                  <div>Załaduj grafikę</div>
+                </div>
+                <!--<div class="file-upload-mask"></div>
+                <input type="file" id="input-file-now" class="file-upload" />-->
+              </div>
+              <div class="file-upload-previews"></div>
+            </div>
+            <form class="p-2">
+              <!--<div class="form-group .mt-6">
+                <input type="file" class="form-control-file form-control-sm" id="exampleFormControlFile1" accept=".jpg, .jpeg, .png, .gif, .webp">
+              </div>-->
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary" type="button">Załaduj</button>
+                </div>
+                <input type="text" class="form-control" placeholder="https://example.com/img.png" aria-label="" aria-describedby="basic-addon1">
+              </div>
+            </form>
+          </div>
+          <div class="w-100 importDataBody">
+            <form>
+              <div class="form-group">
+                <label for="addAnimeTitle">Tytuł</label>
+                <input type="text" class="form-control" id="addAnimeTitle" placeholder="">
+              </div>
+              <div class="d-flex flex-row">
+                <div class="w-50">
+                  <div class="form-group">
+                    <label for="addAnimeGroup">Grupa</label>
+                    <select class="form-select" aria-label="Default select example" id="addAnimeGroup">
+                      <option selected value="0">Pozostałe</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="w-50">
+                  <div class="form-group">
+                    <label for="addAnimeEpisodes">Liczba odcinków</label>
+                    <input type="number" class="form-control" id="addAnimeEpisodes" placeholder="" min="1" value="1">
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="addAnimeUrl">Link</label>
+                <input type="url" class="form-control" id="addAnimeUrl" placeholder="https://example.com/">
+              </div>
+              <div class="mb-3">
+                <label for="addAnimeDescription" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="addAnimeDescription" rows="3"></textarea>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="addModalClose" data-bs-dismiss="modal">Zamknij</button>
+        <button type="button" class="btn btn-primary" id="addRecordToDatabase">Dodaj</button>
+      </div>
+    </div>
+  </div>
+</div>

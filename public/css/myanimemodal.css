@@ -1,0 +1,39 @@
+.importImageBody {
+    width: 216px;
+    min-width: 256px;
+}
+
+.importDataBody {
+    width: max-content;
+}
+
+.file-size {
+    width: 200px;
+    height: 285px;
+    max-width: 200px;
+    max-height: 285px;
+    min-width: 200px;
+    min-height: 285px;
+}
+
+ /* Ukryj standardowe pole input type="file" */
+ input[type="file"] {
+    display: none;
+}
+
+/* Niestandardowy styl przycisku z użyciem Bootstrap */
+.custom-file-upload {
+    display: inline-block;
+    cursor: pointer;
+    width: 200px;
+    height: 285px;
+    max-width: 200px;
+    max-height: 285px;
+    min-width: 200px;
+    min-height: 285px;
+}
+
+/* Dla lepszego efektu przy najechaniu myszką */
+.custom-file-upload:hover {
+    background-color: #f8f9fa;
+}

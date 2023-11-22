@@ -1,0 +1,100 @@
+:root{
+    --selectDef:     #00465e;
+    --selectNoWatch: #a10023;
+    --selectWatching:#e0dd00;
+    --selectWatched: #00b853;
+    --selectCanceled:#949494;
+
+    --glowDef:     rgba(0, 153, 255, 0.24), 0 0px 50px 0 rgba(0, 153, 255, 0.19);
+    --glowNoWatch: rgba(255, 0, 0, 0.24), 0 0px 50px 0 rgba(255, 0, 119, 0.19);
+    --glowWatching:rgba(255, 238, 0, 0.24), 0 0px 50px 0 rgba(255, 145, 0, 0.19);
+    --glowWatched: rgba(0, 255, 85, 0.24), 0 0px 50px 0 rgba(0, 255, 136, 0.19);
+    --glowCanceled:rgba(158, 158, 158, 0.24), 0 0px 50px 0 rgba(116, 116, 116, 0.19);
+
+    --glowMaster: var(--glowDef);
+}
+
+.slStyle{
+    padding: 4px 4px;
+    width: 128px;
+    border: 2px solid #00465e;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+    font-weight: bold;
+    transition: all .1s linear;
+}
+
+.slStyle:hover, .slStylex::after{
+    border: 2px solid #008CBA;
+    box-shadow: 0 0px 16px 0 rgba(0, 153, 255, 0.24), 0 0px 50px 0 rgba(0, 153, 255, 0.19);
+    text-decoration: underline;
+}
+
+.slStyle_0{
+    padding: 4px 4px;
+    width: 128px;
+    border: 2px solid #a10023;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+    font-weight: bold;
+    transition: all .1s linear;
+}
+
+.slStyle_0:hover, .slStyle_0::after{
+    border: 2px solid #a10023;
+    box-shadow: 0 0px 16px 0 rgba(255, 0, 0, 0.24), 0 0px 50px 0 rgba(255, 0, 119, 0.19);
+    text-decoration: underline;
+}
+
+.slStyle_1{
+    padding: 4px 4px;
+    width: 128px;
+    border: 2px solid #e0dd00;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+    font-weight: bold;
+    transition: all .1s linear;
+}
+
+.slStyle_1:hover, .slStyle_1::after{
+    border: 2px solid #e0dd00;
+    box-shadow: 0 0px 16px 0 rgba(255, 238, 0, 0.24), 0 0px 50px 0 rgba(255, 145, 0, 0.19);
+    text-decoration: underline;
+}
+
+.slStyle_2{
+    padding: 4px 4px;
+    width: 128px;
+    border: 2px solid #00b853;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+    font-weight: bold;
+    transition: all .1s linear;
+}
+
+.slStyle_2:hover, .slStyle_2::after{
+    border: 2px solid #00ff73;
+    box-shadow: 0 0px 16px 0 rgba(0, 255, 85, 0.24), 0 0px 50px 0 rgba(0, 255, 136, 0.19);
+    text-decoration: underline;
+}
+
+.slStyle_3{
+    padding: 4px 4px;
+    width: 128px;
+    border: 2px solid #949494;
+    border-radius: 16px;
+    background-color: #202124;
+    color: white;
+    font-weight: bold;
+    transition: all .1s linear;
+}
+
+.slStyle_3:hover, .slStyle_3::after{
+    border: 2px solid #b1b0b0;
+    box-shadow: 0 0px 16px 0 rgba(158, 158, 158, 0.24), 0 0px 50px 0 rgba(116, 116, 116, 0.19);
+    text-decoration: underline;
+}

@@ -1,0 +1,17 @@
+ANIMU LISTA 2
+
+yanczi 2023
+
+
+
+Prosty cms do tworzenia swojej własnej osobistej listy anime.
+
+wymagania:
+php 8.1 lub nowszy
+    -pdo_mysql
+    -json
+
+mariadb 10.3 / mysql 5.6
+
+
+instalacja:

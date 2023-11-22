@@ -1,0 +1,157 @@
+<div class="w-60 p-1">
+    <div class="table-menu">
+      <div class="">
+        <div class="col filtr-container">
+          <select class="form-select form-select-sm" aria-label="Default select example">
+            <option value="-1" selected>Wszystko</option>
+            <option value="0">Nie obejżane</option>
+            <option value="1">Oglądam</option>
+            <option value="2">Obejżane</option>
+            <option value="3">Porzucone</option>
+          </select>
+        </div>
+      </div>
+      <div class="">
+        <div class="input-group input-group-sm mb-3 rounded-pill">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-prepend">
+              <button class="btn btn-primary btn-sm" type="button">
+                <svg width="16" height="16" fill="currentColor" class="bi bi-trash3">
+                  <use xlink:href="#ico-shearch"/>
+                </svg>
+              </button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="table-content">
+      <table class="table table-hover table-dark">
+        <thead>
+          <tr>
+            <th scope="col" class="imgtr"></th>
+            <th scope="col" class="titletr">Tytuł</th>
+            <th scope="col" class="linkrow"></th>
+            <th scope="col" class="statetr">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="4">
+              <div class="group-separator-bar" onclick="GroupShowSettings(0)">
+                <strong class="text-separator-settings">Animu o szkole xD</strong>
+              </div>
+            </td>
+          </tr>
+          <tr id="anm-row-content-1">
+            <td scope="row" class="d-flex flex-row">
+              <div class="align-self-center p-2">
+                <div class="form-check">
+                  <input class="form-check-input test_check" id="test_check_1" type="checkbox" value="1">
+                </div>
+              </div>  
+              <img src="/img/min/106.jpg" alt="ERROR">
+            </td>
+            <td>
+              <div class="d-flex align-items-start flex-column test_td" onclick="DescryptionRow(0)">
+                <div class="col anmtitle p-2">Hight shool DXD</div>
+                <div class="col daterecord px-2">01-01-1970</div>
+              </div>
+            </td>
+            <td>
+              <a href="https://www.WordPress.com" target="_blank" class="slcontent">
+                <button type="button" class="btn btn-outline-success">
+                  <svg width="16" height="16" fill="currentColor" class="bi bi-link-45deg">
+                    <use xlink:href="#ico-hyperlink"/>
+                  </svg>
+                </button>
+              </a>
+            </td>
+            <td> 
+              <div class="slcontent">
+                <div class="row">
+                  <div class="col">
+                    <div class="epsize">
+                      <select id="sscEp" class="form-select bg-dark border-dark text-white">
+                        <option value="0" selected>Ep. 1</option>
+                        <option value="1">Ep. 2</option>
+                        <option value="2">Ep. 30</option>
+                        <option value="3">Ep. 400</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="stsize">
+                      <select id="sscWatch" class="form-select bg-danger border-danger text-white">
+                        <option value="0" selected>Nie obejżane</option>
+                        <option value="1">Oglądam</option>
+                        <option value="2">Obejżane</option>
+                        <option value="3">Porzucone</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr id="des-row">
+            <td colspan="4">
+              <div class="d-flex">
+                <div class="p-3">
+                  <img src="/img/res/169.jpg" alt="!-IMG MISSING-!" width="200" height="285">
+                </div>
+                <div class="p-3">
+                  <div class="title-text-settings">Lycoris Recoil</div>
+                  <p class="des-text-settings">
+                    Kawiarnia w Tokio serwująca pyszną kawę, super słodkie przysmaki i... coś więcej!!!? Od robienia lokalnych dostaw, przez przyzwoitki, po pozbywanie się zombie, a nawet walkę z gigantycznym potworem?
+                    Niezależnie od tego, jaki masz problem, jesteśmy tu, by pomóc! Rozwiążemy każdy rodzaj "kłopotu" jaki możesz mieć!
+                  </p>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr id="anm-row-content-2">
+            <td scope="row" class="d-flex flex-row">
+              <div class="align-self-center p-2">
+                <div class="form-check">
+                  <input class="form-check-input test_check" id="test_check_2" type="checkbox" value="2">
+                </div>
+              </div>  
+              <img src="img/min/106.jpg" alt="ERROR">
+            </td>
+            <td>
+              <div class="d-flex align-items-start flex-column test_td" onclick="DescryptionRow(1)">
+                <div class="col anmtitle p-2">Hight shool DXD</div>
+                <div class="col daterecord px-2">01-01-1970</div>
+              </div>
+            </td>
+            <td>
+              <div class="slcontent">
+                <button type="button" class="btn btn-outline-danger" disabled>
+                  <svg width="16" height="16" fill="currentColor" class="bi bi-link-45deg">
+                    <use xlink:href="#ico-hyperlink"/>
+                  </svg>
+                </button>
+              </div>
+            </td>
+            <td> 
+              <div class="slcontent"><div class="row"><div class="col"><div class="epsize">
+                <select id="sscEp" class="form-select bg-dark border-dark text-white" aria-label="Default select example">
+                  <option value="0" selected>Ep. 1</option>
+                  <option value="1">Ep. 2</option>
+                  <option value="2">Ep. 30</option>
+                  <option value="3">Ep. 400</option>
+                </select></div></div></div>
+              <div class="col"><div class="stsize">
+                <select id="sscWatch" class="form-select bg-danger border-danger text-white" aria-label="Default select example">
+                  <option value="0" selected>Nie obejżane</option>
+                  <option value="1">Oglądam</option>
+                  <option value="2">Obejżane</option>
+                  <option value="3">Porzucone</option>
+                </select></div></div></div></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

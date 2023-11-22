@@ -1,0 +1,117 @@
+.core {
+    display: flex;
+    flex-flow: row;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    max-width: 280px;
+    min-width: 280px;
+    height: 100%;
+    background-color: #15202b;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    display: flex;
+    flex-flow: column;
+}
+
+.logocont {
+    width: 100%;
+    height: 64px;
+    text-align:center;
+}
+
+.logo {
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    width: 80%;
+    height: auto;
+}
+
+.hrline {
+    width: 90%;
+    text-align:center;
+    border-color: #1f4e7e;
+}
+
+.navigate {
+    list-style: none;
+    padding-left: 0;
+    margin: 16px;
+    min-height: 40%;
+    white-space: nowrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex: 1 1 auto;
+}
+
+.navibt{
+    height: 48px;
+    margin-bottom: 8px;
+}
+
+.menubt {
+    width: 100%;
+    height: 100%;
+    background-color: #15202b;
+    border: 0;
+    color:aliceblue;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all .1s linear;
+    text-align:left;
+}
+
+.menubt:hover {
+    background-color: #0d6efd;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 62px;
+}
+
+.usrav {
+    width: 48px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.usrtxt {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:aliceblue;
+    padding-left: 20px;
+}
+
+.logoutbt {
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border-radius: 8px;
+    background: url(../images/logout.svg) no-repeat;
+    background-color:brown;
+    margin-left: 64px;
+    transition: all .1s linear;
+}
+
+.logoutbt:hover {
+    background-color: #0d6efd;
+}
+
+.content {
+    flex: 1;
+    position:sticky;
+    background-color: aquamarine;
+    border: 2px solid crimson;
+}
