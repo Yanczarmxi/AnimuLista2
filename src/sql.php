@@ -1,5 +1,7 @@
 <?php
-$sqldata = require_once 'config.php';
+$config = require_once 'config.php';
+$sqldata = $config['database'];
+
 
 try{
     $pdo = new PDO(

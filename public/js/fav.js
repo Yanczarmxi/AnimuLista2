@@ -24,12 +24,12 @@ function GetDataFromBackend(){
     globalAnimeData = null;
 
     $.ajax({
-        url:  "ajax.php",
+        url:  "ajax/ajax.php",
         type: "post",
         data: {"favData": idDataFilter},
         success: function(response){
             var dataParsing = $.parseJSON(response);
-            //console.log(dataParsing);
+            //console.log(response);
             RenderTable(dataParsing);
         },
         error: function(e){
@@ -89,7 +89,7 @@ function uploadImage(){
     console.log("DATA: " + fileData);
 
     $.ajax({
-    url: 'upload.php',
+    url: 'ajax/upload.php',
     type: 'post',
     data: fileData,
     contentType: false,

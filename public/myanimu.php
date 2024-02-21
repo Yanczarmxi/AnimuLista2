@@ -7,7 +7,7 @@ if(!isset($_SESSION["ANIME_LISTA_USER_NAME"]) or !isset($_SESSION["ANIME_LISTA_U
 }
 else
 {
-    require '../src/myanimu.php';
+    require '../src/site.php';
     echo MyAnimuSite();
 }
 ?>

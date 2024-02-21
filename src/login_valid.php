@@ -1,7 +1,4 @@
 <?php
-use phpbb\session;
-session_start();
-
 function ErrMsg_Login(){
     return '<div id="msgContent" class="msgError"><b>ERROR: </b>Logowanie nie powiodło się :C
                                     <span onclick="CloseError()" class="msgErrorClose">&times;</span></div>';

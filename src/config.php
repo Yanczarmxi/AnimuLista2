@@ -1,13 +1,20 @@
 <?php
-    $xmlConfigFile = '../config/config.xml';
-    $xmlConfigData = simplexml_load_file($xmlConfigFile);
-
+    require_once __DIR__.'/../vendor/autoload.php';
+    use Dallgoot\Yaml\Yaml;
+    
+    $debug = 0;
+    
+    $yaml = Yaml::parseFile(__DIR__.'/../config/config.yml', 0, $debug);
+    
     return [
-        'host' => $xmlConfigData->host,
-        'user' => $xmlConfigData->user,
-        'pass' => $xmlConfigData->password,
-        'db'   => $xmlConfigData->database,
-        'code' => $xmlConfigData->keycode,
-        'collate' => $xmlConfigData->collate
+        //ładowanie danych logowania do bazy danych
+        'database' => [
+            'host' => $yaml->database->host,
+            'user' => $yaml->database->user,
+            'pass' => $yaml->database->password,
+            'db'   => $yaml->database->database,
+            'code' => $yaml->database->keycode,
+            'collate' => $yaml->database->collate
+        ]
     ];
-?>
+    ?>
