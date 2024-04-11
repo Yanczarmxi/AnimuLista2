@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<config>
-   <host>127.0.0.1</host>
-   <user>root</user>
-   <password>123</password>
-   <database>animedb</database>
-   <keycode>utf8mb4</keycode>
-   <collate>utf8mb4_polish_ci</collate>
-</config>
